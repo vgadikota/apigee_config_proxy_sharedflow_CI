@@ -43,10 +43,15 @@
                         </goals>
                         <configuration>
                             <overwrite>true</overwrite>
-                            <outputDirectory>${basedir}/target/apiproxy</outputDirectory>
+                            <outputDirectory>${basedir}/target</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>apiproxy</directory>
+                                    <directory>${basedir}</directory>
+					<filtering>true</filtering>
+									<includes>
+										<include>apiproxy/**</include>
+										<include>test/integration/**</include>
+									</includes>
                                 </resource>
                             </resources>
                         </configuration>
