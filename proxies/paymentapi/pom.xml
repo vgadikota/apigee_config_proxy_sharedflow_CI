@@ -179,7 +179,7 @@
 						</configuration>
 					</execution>
 					<!-- Check Code Coverage-->
-					<execution>
+					<!--<execution>
 						<id>check-coverage</id>
 						<phase>test</phase>
 						<goals>
@@ -191,7 +191,7 @@
 								node_modules/istanbul/lib/cli.js check-coverage
 							</commandlineArgs>
 						</configuration>
-					</execution>
+					</execution>-->
 					<!-- run apigeelint -->
 					<!-- its got issues on Jenkins -->
 					<execution>
